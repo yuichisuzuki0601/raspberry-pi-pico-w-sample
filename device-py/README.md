@@ -17,6 +17,12 @@
 -   次に、[ここ](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html#what-is-micropython)にアクセスし、「Raspberry Pi Pico W with Wi-Fi and Bluetooth LE support」からUF2ファイルをダウンロードします
 -   これも同様に、デスクトップのボリュームにドロップすることで、MicroPythonを利用する準備が整います
 
+## ライブラリの用意
+
+-   このリポジトリをクローンしたディレクトリの横に  
+    https://github.com/yuichisuzuki0601/raspberry-pi-pico-w-lib  
+    をクローンする必要があります(ライブラリ参照のため)
+
 ## ひとまず起動
 
 -   Raspberry Pi Pico を USB ケーブルで PC と接続します

@@ -52,8 +52,6 @@
 -   corepack を使って yarn を有効にする
 -   rootディレクトリで yarn を実行する
 -   vscode をインストールする
--   このリポジトリをクローンしたディレクトリの横に https://github.com/yuichisuzuki0601/raspberry-pi-pico-w-libをクローンする必要があります  
-    (ライブラリ参照のため)
 
 # Raspberry Pi Pico WH 側の準備(共通)
 
