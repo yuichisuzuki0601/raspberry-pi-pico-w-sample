@@ -1,5 +1,5 @@
 {
-    "name": "raspberry-pi-pico-wh-wifi",
+    "name": "raspberry-pi-pico-w-sample",
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
