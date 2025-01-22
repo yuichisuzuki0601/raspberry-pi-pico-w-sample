@@ -25,38 +25,38 @@ const ledOn = async (led: LightBulb) => await led.intensity.write(HIGH);
 const ledOff = async (led: LightBulb) => await led.intensity.write(LOW);
 
 buttonRed.down.subscribe(async () => {
-    await ledOn(ledRed);
-    console.log(`Red`);
-    try {
-        const res = await fetch("http://raspberry-pi-pico-wh-wifi.glitch.me", {
-            method: "GET",
-        });
-        console.log(await res.text());
-        await res.close();
-    } catch (e) {
-        console.error(e);
-    }
+  await ledOn(ledRed);
+  console.log(`Red`);
+  try {
+    const res = await fetch("http://raspberry-pi-pico-wh-wifi.glitch.me", {
+      method: "GET",
+    });
+    console.log(await res.text());
+    await res.close();
+  } catch (e) {
+    console.error(e);
+  }
 });
 
 buttonRed.up.subscribe(async () => await ledOff(ledRed));
 
 buttonYellow.down.subscribe(async () => {
-    await ledOn(ledYellow);
-    console.log(`Yellow`);
+  await ledOn(ledYellow);
+  console.log(`Yellow`);
 });
 
 buttonYellow.up.subscribe(async () => await ledOff(ledYellow));
 
 buttonBlue.down.subscribe(async () => {
-    await ledOn(ledBlue);
-    console.log(`Blue`);
+  await ledOn(ledBlue);
+  console.log(`Blue`);
 });
 
 buttonBlue.up.subscribe(async () => await ledOff(ledBlue));
 
 buttonGreen.down.subscribe(async () => {
-    await ledOn(ledGreen);
-    console.log(`Green`);
+  await ledOn(ledGreen);
+  console.log(`Green`);
 });
 
 buttonGreen.up.subscribe(async () => await ledOff(ledGreen));
