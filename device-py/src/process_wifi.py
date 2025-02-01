@@ -65,8 +65,8 @@ def process():
     led_pico.off()
 
     try:
-        wifi_ssid = config.get('wifi_ssid')
-        wifi_password = config.get('wifi_password')
+        wifi_ssid = config.get('wifi_ssid') or ''
+        wifi_password = config.get('wifi_password') or ''
         Wlan(wifi_ssid, wifi_password).connect()
     except BaseException as e:
         emit_error_sign()

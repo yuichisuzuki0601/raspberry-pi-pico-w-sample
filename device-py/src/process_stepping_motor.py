@@ -16,8 +16,8 @@ def process():
     tact_switch_blue = TactSwitch('blue', 22)
     tact_switch_green = TactSwitch('green', 25)
 
-    settping_motor_1 = Uln2003a(16, 11, 6, 1)
-    settping_motor_2 = Uln2003a(34, 29, 27, 26)
+    settping_motor_1 = Uln2003a('settping_motor_1', 16, 11, 6, 1)
+    settping_motor_2 = Uln2003a('settping_motor_2', 34, 29, 27, 26)
 
     def parallel(callback_1, callback_2):
         start_new_thread(callback_1, ())
