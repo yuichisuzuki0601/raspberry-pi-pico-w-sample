@@ -32,7 +32,7 @@ def process():
         led_group.all_flash()
 
     def send(color):
-        http_client.post('api', { 'color': color },
+        http_client.post('api', {}, { 'color': color },
         lambda response: [
             emit_success_sign(),
             print(f'{str(response.status_code)} {response.reason.decode("utf-8")} {response.text}')
